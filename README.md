@@ -24,15 +24,20 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 Use the **Katara OAuth2 API** credential.
 
-The credential requires:
+Dynamic client registration is enabled by default, so users only need to register and approve the client during the OAuth flow instead of creating client credentials manually.
+
+When **Use Dynamic Client Registration** is enabled, the credential requires:
 
 1. **Base URL**: The public base URL of the Katara API.
-2. **Auth0 Domain**: The Auth0 tenant domain that validates Katara user access tokens.
-3. **Auth0 Custom Domain**: Optional. Use this if your Auth0 tenant exposes a custom login domain for interactive OAuth.
-4. **Audience**: The Katara API audience configured in Auth0.
-5. **Scope**: Optional. Supply scopes required by your Auth0 application, such as `openid profile email offline_access`, if applicable.
+2. **Server URL**: The authorization server base URL used for OAuth discovery and dynamic client registration. This field is provided by n8n's base OAuth2 credential when dynamic client registration is enabled. For Auth0, use your tenant or custom domain URL, such as `https://katara-dev.us.auth0.com`.
+3. **Audience**: The Katara API audience configured in Auth0.
+4. **Scope**: Optional. Supply scopes required by your Auth0 application, such as `openid profile email offline_access`, if applicable. In dynamic client registration mode, n8n may replace the requested scope with the server's discovered `scopes_supported` metadata.
 
-When configuring Auth0, copy the OAuth redirect URL shown by n8n into your Auth0 application's allowed callback URLs.
+The authorization server must expose standard OAuth discovery metadata and a dynamic client registration endpoint. Auth0 tenants must have dynamic client registration enabled for this flow to work.
+
+If you disable dynamic client registration, n8n falls back to the standard OAuth2 credential fields and you must provide the client configuration manually.
+
+When configuring Auth0, allow the OAuth redirect URL shown by n8n as a callback URL for the registered client.
 
 ## Usage
 
@@ -51,7 +56,7 @@ Optional fields let you override the uploaded filename and content type, and sen
 
 ## Compatibility
 
-Compatible with n8n@1.60.0 or later.
+Compatible with n8n versions that support OAuth2 dynamic client registration for `oAuth2Api` credentials.
 
 ## Resources
 

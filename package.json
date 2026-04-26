@@ -1,9 +1,9 @@
 {
     "name": "n8n-nodes-katara",
     "version": "0.1.0",
-	"description": "n8n community node for Katara document uploads",
+    "description": "n8n community node for Katara document uploads",
     "license": "MIT",
-	"homepage": "https://github.com/katara-ai-inc/katara-n8n",
+    "homepage": "https://github.com/katara-ai-inc/katara-n8n",
     "keywords": [
         "n8n-community-node-package"
     ],
@@ -13,30 +13,30 @@
     },
     "repository": {
         "type": "git",
-		"url": "https://github.com/katara-ai-inc/katara-n8n.git"
+        "url": "https://github.com/katara-ai-inc/katara-n8n.git"
     },
-   "scripts": {
-		"build": "n8n-node build",
-		"build:watch": "tsc --watch",
-		"dev": "n8n-node dev",
-		"lint": "n8n-node lint",
+    "scripts": {
+        "build": "n8n-node build",
+        "build:watch": "tsc --watch",
+        "dev": "n8n-node dev",
+        "lint": "n8n-node lint",
         "lint:fix": "n8n-node lint --fix",
-		"release": "n8n-node release",
-		"prepublishOnly": "n8n-node prerelease"
-	},
+        "release": "n8n-node release",
+        "prepublishOnly": "n8n-node prerelease"
+    },
     "files": [
         "dist"
     ],
     "n8n": {
         "n8nNodesApiVersion": 1,
-		"strict": true,
-		"credentials": [
-			"dist/credentials/KataraOAuth2Api.credentials.js"
-		],
-		"nodes": [
-			"dist/nodes/Katara/Katara.node.js"
-		]
-	},
+        "strict": true,
+        "credentials": [
+            "dist/credentials/KataraOAuth2Api.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/Katara/Katara.node.js"
+        ]
+    },
     "devDependencies": {
         "@n8n/node-cli": "*",
         "eslint": "9.32.0",
@@ -46,5 +46,6 @@
     },
     "peerDependencies": {
         "n8n-workflow": "*"
-    }
+    },
+    "packageManager": "pnpm@10.2.1+sha256.f988f0d93b87e1da2d8cdf6ac7f45a01c6f843ae3606b4ca0f2ffd713b85f975"
 }
