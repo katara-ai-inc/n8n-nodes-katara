@@ -1,19 +1,19 @@
 {
     "name": "n8n-nodes-katara",
     "version": "0.1.0",
-    "description": "n8n community node for Katara document uploads",
+    "description": "n8n community node for Katara API",
     "license": "MIT",
-    "homepage": "https://github.com/katara-ai-inc/katara-n8n",
+    "homepage": "https://github.com/katara-ai-inc/n8n-nodes-katara",
     "keywords": [
         "n8n-community-node-package"
     ],
     "author": {
-        "name": "Victor Castell",
-        "email": "0x@vcastellm.xyz"
+        "name": "Katara AI Inc.",
+        "email": "devops@katara.ai"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/katara-ai-inc/katara-n8n.git"
+        "url": "https://github.com/katara-ai-inc/n8n-nodes-katara.git"
     },
     "scripts": {
         "build": "n8n-node build",
