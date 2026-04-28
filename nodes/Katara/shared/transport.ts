@@ -29,7 +29,7 @@ export async function kataraUploadDocument(
 	try {
 		const response = await this.helpers.httpRequestWithAuthentication.call(
 			this,
-			'kataraOAuth2Api',
+			'kataraApi',
 			options,
 		);
 

@@ -31,7 +31,7 @@
         "n8nNodesApiVersion": 1,
         "strict": true,
         "credentials": [
-            "dist/credentials/KataraOAuth2Api.credentials.js"
+            "dist/credentials/KataraApi.credentials.js"
         ],
         "nodes": [
             "dist/nodes/Katara/Katara.node.js"

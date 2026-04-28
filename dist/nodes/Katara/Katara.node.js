@@ -197,7 +197,7 @@ class Katara {
             outputs: [n8n_workflow_1.NodeConnectionTypes.Main],
             credentials: [
                 {
-                    name: 'kataraOAuth2Api',
+                    name: 'kataraApi',
                     required: true,
                 },
             ],
@@ -242,7 +242,7 @@ class Katara {
     async execute() {
         const items = this.getInputData();
         const returnData = [];
-        const credentials = (await this.getCredentials('kataraOAuth2Api'));
+        const credentials = (await this.getCredentials('kataraApi'));
         let baseUrl;
         try {
             baseUrl = normalizeBaseUrl(credentials.baseUrl);

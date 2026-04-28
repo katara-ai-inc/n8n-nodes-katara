@@ -241,9 +241,9 @@ export class Katara implements INodeType {
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],
-		credentials: [
+	credentials: [
 			{
-				name: 'kataraOAuth2Api',
+				name: 'kataraApi',
 				required: true,
 			},
 		],
@@ -288,7 +288,7 @@ export class Katara implements INodeType {
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 		const items = this.getInputData();
 		const returnData: INodeExecutionData[] = [];
-		const credentials = (await this.getCredentials('kataraOAuth2Api')) as KataraCredentials;
+		const credentials = (await this.getCredentials('kataraApi')) as KataraCredentials;
 
 		let baseUrl: string;
 

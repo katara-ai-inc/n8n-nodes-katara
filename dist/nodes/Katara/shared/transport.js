@@ -15,7 +15,7 @@ async function kataraUploadDocument(itemIndex, baseUrl, body) {
         json: true,
     };
     try {
-        const response = await this.helpers.httpRequestWithAuthentication.call(this, 'kataraOAuth2Api', options);
+        const response = await this.helpers.httpRequestWithAuthentication.call(this, 'kataraApi', options);
         return response;
     }
     catch (error) {
