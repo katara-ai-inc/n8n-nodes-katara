@@ -5,7 +5,7 @@ class KataraApi {
     constructor() {
         this.name = 'kataraApi';
         this.displayName = 'Katara API';
-        this.icon = { light: 'file:../icons/katara.svg', dark: 'file:../icons/katara.dark.svg' };
+        this.icon = { light: 'file:../icons/katara-mark.png', dark: 'file:../icons/katara-mark.png' };
         this.documentationUrl = 'https://github.com/katara-ai-inc/katara-n8n?tab=readme-ov-file#credentials';
         this.properties = [
             {
