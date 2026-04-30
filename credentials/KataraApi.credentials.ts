@@ -22,7 +22,7 @@ export class KataraApi implements ICredentialType {
 			type: 'string',
 			default: '',
 			required: true,
-			placeholder: 'https://api.example.com',
+			placeholder: 'https://api.katara.ai',
 			description: 'The public base URL of the Katara API',
 		},
 		{
