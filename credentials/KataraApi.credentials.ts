@@ -11,7 +11,7 @@ export class KataraApi implements ICredentialType {
 
 	displayName = 'Katara API';
 
-	icon: Icon = { light: 'file:../icons/katara-mark.png', dark: 'file:../icons/katara-mark.png' };
+	icon: Icon = { light: 'file:../icons/katara.svg', dark: 'file:../icons/katara.dark.svg' };
 
 	documentationUrl = 'https://github.com/katara-ai-inc/katara-n8n?tab=readme-ov-file#credentials';
 
