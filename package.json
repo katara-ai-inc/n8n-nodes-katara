@@ -53,13 +53,5 @@
 			"dist/nodes/Katara/Katara.node.js"
 		]
 	},
-	"packageManager": "pnpm@10.2.1+sha256.f988f0d93b87e1da2d8cdf6ac7f45a01c6f843ae3606b4ca0f2ffd713b85f975",
-	"overrides": {
-		"langsmith": "^0.5.26",
-		"uuid": "^14.0.0",
-		"eslint-plugin-n8n-nodes-base": "^1.16.6",
-		"@langchain/classic": "^1.0.32",
-		"@langchain/community": "^1.1.27",
-		"@langchain/core": "^1.1.42"
-	}
+	"packageManager": "pnpm@10.2.1+sha256.f988f0d93b87e1da2d8cdf6ac7f45a01c6f843ae3606b4ca0f2ffd713b85f975"
 }
