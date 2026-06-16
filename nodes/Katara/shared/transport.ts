@@ -6,8 +6,8 @@ import type {
 } from 'n8n-workflow';
 import { NodeApiError } from 'n8n-workflow';
 
-const UPLOAD_DOCUMENT_PROCEDURE =
-	'/katara.content_uploader.v1alpha1.ContentUploaderService/UploadDocument';
+const UPLOAD_DOCUMENT_ASYNC_PROCEDURE =
+	'/katara.content_uploader.v1alpha1.ContentUploaderService/UploadDocumentAsync';
 
 export async function kataraUploadDocument(
 	this: IExecuteFunctions,
@@ -17,7 +17,7 @@ export async function kataraUploadDocument(
 ): Promise<IDataObject> {
 	const options: IHttpRequestOptions = {
 		method: 'POST',
-		url: `${baseUrl}${UPLOAD_DOCUMENT_PROCEDURE}`,
+		url: `${baseUrl}${UPLOAD_DOCUMENT_ASYNC_PROCEDURE}`,
 		headers: {
 			'Content-Type': 'application/json',
 			'Connect-Protocol-Version': '1',

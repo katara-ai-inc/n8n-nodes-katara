@@ -2,11 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.kataraUploadDocument = kataraUploadDocument;
 const n8n_workflow_1 = require("n8n-workflow");
-const UPLOAD_DOCUMENT_PROCEDURE = '/katara.content_uploader.v1alpha1.ContentUploaderService/UploadDocument';
+const UPLOAD_DOCUMENT_ASYNC_PROCEDURE = '/katara.content_uploader.v1alpha1.ContentUploaderService/UploadDocumentAsync';
 async function kataraUploadDocument(itemIndex, baseUrl, body) {
     const options = {
         method: 'POST',
-        url: `${baseUrl}${UPLOAD_DOCUMENT_PROCEDURE}`,
+        url: `${baseUrl}${UPLOAD_DOCUMENT_ASYNC_PROCEDURE}`,
         headers: {
             'Content-Type': 'application/json',
             'Connect-Protocol-Version': '1',
