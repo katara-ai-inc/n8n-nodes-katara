@@ -40,7 +40,7 @@ Required node fields:
 3. **Source ID**
 4. **Input Binary Field**
 
-The node reads the selected input binary property, base64-encodes the file contents using the protobuf JSON mapping expected by Connect, and sends a unary request to Katara's `UploadDocument` RPC.
+The node reads the selected input binary property, base64-encodes the file contents using the protobuf JSON mapping expected by Connect, and sends a unary request to Katara's `UploadDocumentAsync` RPC.
 
 Optional fields let you override the uploaded filename and content type, and send `language`, `publishedAt`, and comma-separated `tagIds`.
 
