@@ -2,7 +2,7 @@
     "node": "n8n-nodes-katara",
     "nodeVersion": "1.0",
     "codexVersion": "1.0",
-    "categories": ["Development", "Developer Tools"],
+    "categories": ["Productivity", "Data & Storage"],
     "resources": {
         "credentialDocumentation": [
             {
